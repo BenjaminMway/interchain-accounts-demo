@@ -135,6 +135,9 @@ init-golang-rly: kill-dev install
 	@echo "Initializing relayer..."
 	./network/relayer/interchain-acc-config/rly-init.sh
 
+init-network:
+		./network/init.sh
+
 start: 
 	@echo "Starting up test network"
 	./network/start.sh
@@ -149,3 +152,15 @@ kill-dev:
 	@echo "Killing icad and removing previous data"
 	-@rm -rf ./data
 	-@killall icad 2>/dev/null
+
+restart-hermes: kill-dev install 
+	@echo "Initializing both blockchains..."
+	./network/init.sh
+	./network/start.sh
+	@echo "Initializing relayer..." 
+	./network/hermes/restore-keys.sh
+	./network/hermes/create-conn.sh
+	./network/hermes/start.sh
+
+fill-ica:
+	./scripts/fillICA.sh
