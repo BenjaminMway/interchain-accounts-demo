@@ -143,6 +143,9 @@ start:
 	./network/start.sh
 
 start-hermes:
+
+	./network/hermes/restore-keys.sh
+	./network/hermes/create-conn.sh
 	./network/hermes/start.sh
 
 start-golang-rly:
