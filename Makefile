@@ -167,3 +167,6 @@ restart-hermes: kill-dev install
 
 fill-ica:
 	./scripts/fillICA.sh
+
+q-Ica: 
+	./scripts/qIca.sh
