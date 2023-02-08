@@ -170,3 +170,6 @@ fill-ica:
 
 q-Ica: 
 	./scripts/qIca.sh
+
+send-ibc:
+	./scripts/sendIbc.sh
