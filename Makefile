@@ -164,7 +164,8 @@ restart-hermes: kill-dev install
 	./network/hermes/restore-keys.sh
 	./network/hermes/create-conn.sh
 	./network/hermes/start.sh
-
+	./scripts/sendIbc.sh
+	
 fill-ica:
 	./scripts/fillICA.sh
 
