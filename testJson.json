@@ -1,0 +1,14 @@
+{
+    "@type": "/intertx.MsgSubmitTx",
+    "owner": "cosmos1m9l358xunhhwds0568za49mzhvuxx9uxre5tud",
+    "connection_id": "connection-0",
+    "msg": {
+      "@type": "/cosmos.staking.v1beta1.MsgDelegate",
+      "delegator_address": "cosmos1wrpw29xrkd54kep9q4uf82t927j5m489wrc5ryth9ltqczhaprkqcx5l2z",
+      "validator_address": "cosmosvaloper1qnk2n4nlkpw9xfqntladh74w6ujtulwnmxnh3k",
+      "amount": {
+        "denom": "stake",
+        "amount": "100000"
+      }
+    }
+}
