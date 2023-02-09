@@ -163,9 +163,9 @@ restart-hermes: kill-dev install
 	@echo "Initializing relayer..." 
 	./network/hermes/restore-keys.sh
 	./network/hermes/create-conn.sh
-	./network/hermes/start.sh
 	./scripts/sendIbc.sh
-	
+	./network/hermes/start.sh
+
 fill-ica:
 	./scripts/fillICA.sh
 
