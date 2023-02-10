@@ -174,3 +174,6 @@ q-Ica:
 
 send-ibc:
 	./scripts/sendIbc.sh
+
+trafic:
+	./scripts/startTrafic.sh
