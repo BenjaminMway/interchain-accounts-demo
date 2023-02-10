@@ -175,5 +175,5 @@ q-Ica:
 send-ibc:
 	./scripts/sendIbc.sh
 
-trafic:
+rewards:
 	./scripts/startTrafic.sh
